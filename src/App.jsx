@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import LandingPage from './components/LandingPage';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1 >
-        Welcome to the mukuru app.
-      </h1>
+      <LandingPage />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
+
