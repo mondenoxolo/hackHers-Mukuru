@@ -1,0 +1,74 @@
+.landing-page {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #ff6600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.hero, .who-is-mukuru, .commitment, .mukuru-group {
+    margin-bottom: 2rem;
+}
+
+.mukuru-group {
+    background-color: rgba(255, 102, 0, 0.8);
+    padding: 2rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    margin: 1rem;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
