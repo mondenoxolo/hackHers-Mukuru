@@ -71,7 +71,7 @@ function LandingPage() {
 
             <section id="home" className="hero">
                 <div className="hero-content">
-                    <h1>Welcome to Mukuru</h1>
+                    <h1>Welcome to Mukuru * HackHers</h1>
                     <p>Empowering Africa's Financial Future</p>
                 </div>
             </section>
