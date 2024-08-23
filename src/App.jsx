@@ -1,20 +1,17 @@
-import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-
 import LandingPage from './components/LandingPage';
-// import Malawi from './components/Malawi';
-
+import Zimbabwe from './components/Zimbabwe';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <LandingPage /> 
-      </>
-
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/zimbabwe" element={<Zimbabwe />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
-
