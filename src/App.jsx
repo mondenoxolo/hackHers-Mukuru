@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import GenericCountryPage from './components/GenericCountryPage';
 import LandingPage from './components/LandingPage';
-import Zimbabwe from './components/Zimbabwe';
+// import LandingPage from './components/LandingPage';
 
 function App() {
   return (

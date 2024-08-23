@@ -11,7 +11,7 @@ Create an intuitive and user-friendly application allowing customers to search f
 2. [Usage]
 3. [Contributing]
 4. [License]
-5. [Contact]
+
 
 ## Installation
 1. Clone the repository: https://github.com/mondenoxolo/hackHers-Mukuru.git
