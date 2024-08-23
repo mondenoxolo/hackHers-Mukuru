@@ -1,0 +1,29 @@
+/* Set the background image and other properties for the container */
+.container {
+    background-image: url('src/pictures/Malawi/images.png');
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Style for the image grid */
+.image-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-gap: 10px; /* Space between images */
+    width: 80%; /* Adjust as needed */
+    max-width: 1200px; /* Limit maximum width */
+}
+
+/* Style for individual images */
+.image-row img {
+    width: 100%; /* Responsive to grid cell size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover their cells */
+    border-radius: 5px; /* Optional: rounded corners for images */
+}
+

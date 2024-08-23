@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import './Zimstyle.css';
+import Navbar from './Navbar';
 
 function Zimbabwe() {
     return (
         <>
+        
             <div className="background-container">
                 <div className="content">
                 <img src="/src/pictures/Zimbabwe/Money.png" alt="Atlas" />
