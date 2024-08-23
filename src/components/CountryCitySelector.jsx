@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CountryCitySelector.css'; // Import the CSS file
 
 const CountryCitySelector = () => {
   const [country, setCountry] = useState('');
@@ -34,7 +35,6 @@ const CountryCitySelector = () => {
     const city = e.target.value;
     setSelectedCity(city);
 
-    // Fetch the data again for the selected country
     const countryUrl = countryUrls[country];
     fetch(countryUrl)
       .then(response => response.json())
@@ -52,9 +52,9 @@ const CountryCitySelector = () => {
   };
 
   return (
-    <div>
-      <h1>Select a Country</h1>
-      <select value={country} onChange={handleCountryChange}>
+    <div className="container">
+      <h1 className="heading">Select a Country</h1>
+      <select className="select" value={country} onChange={handleCountryChange}>
         <option value="">-- Select a Country --</option>
         <option value="malawi">Malawi</option>
         <option value="zambia">Zambia</option>
@@ -63,8 +63,8 @@ const CountryCitySelector = () => {
 
       {cities.length > 0 && (
         <>
-          <h2>Select a City</h2>
-          <select value={selectedCity} onChange={handleCityChange}>
+          <h2 className="heading">Select a City</h2>
+          <select className="select" value={selectedCity} onChange={handleCityChange}>
             <option value="">-- Select a City --</option>
             {cities.map((city, index) => (
               <option key={index} value={city}>{city}</option>
@@ -75,10 +75,10 @@ const CountryCitySelector = () => {
 
       {addresses.length > 0 && (
         <>
-          <h2>Addresses and Coordinates in {selectedCity}</h2>
-          <ul>
+          <h2 className="heading">Addresses and Coordinates in {selectedCity}</h2>
+          <ul className="list">
             {addresses.map((address, index) => (
-              <li key={index}>
+              <li key={index} className="list-item">
                 <strong>Address:</strong> {address.streetAddress}<br />
                 <strong>Coordinates:</strong> {JSON.stringify(address.coordinates)}
               </li>
