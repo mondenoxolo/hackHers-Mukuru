@@ -12,7 +12,7 @@ function Zambia() {
                         </div>
                         <h1>Zambia</h1>
                     </div>
-                    <p>Receiving money in Zimbabwe has never been easier. <br /> For fast and affordable money transfers, choose Mukuru.</p>
+                    <p>Receiving money in Zambia has never been easier. <br /> For fast and affordable money transfers, choose Mukuru.</p>
                     <div className="image-list-container">
                         <ul className="image-list">
                             <li><img src="/src/pictures/Zambia/mukuru.png" alt="mukuru" /></li>

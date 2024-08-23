@@ -3,6 +3,7 @@ import './App.css';
 import LandingPage from './components/LandingPage';
 import Zimbabwe from './components/Zimbabwe';
 import GenericCountryPage from './components/GenericCountryPage';
+import Zambia from './components/Zambia';
 
 function App() {
   return (
