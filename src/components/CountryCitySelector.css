@@ -1,0 +1,68 @@
+/* Add a full-screen background image */
+body {
+    background-image: url('src/pictures/continent/AfricaContinent.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .list-item {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .heading {
+      font-size: 24px;
+    }
+  
+    .select {
+      font-size: 14px;
+    }
+  
+    .list-item {
+      font-size: 14px;
+    }
+  }
+  
