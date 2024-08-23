@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 
-import LandingPage from './components/LandingPage';
-// import Malawi from './components/Malawi';
+//import LandingPage from './components/LandingPage';
+ import Malawi from './components/Malawi';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <LandingPage /> 
+      <Malawi /> 
       </>
 
   );
