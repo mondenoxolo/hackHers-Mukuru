@@ -5,6 +5,7 @@ import Zimbabwe from './components/Zimbabwe';
 import GenericCountryPage from './components/GenericCountryPage';
 import Zambia from './components/Zambia';
 import Malawi from'./components/Malawi';
+import CountryCitySelector from './components/CountryCitySelector';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/eswatini" element={<GenericCountryPage />} /> */}
         <Route path="/zambia" element={<Zambia />} />
         <Route path="/malawi" element={<Malawi />} /> 
+        <Route path="/country" element={<CountryCitySelector />}/>
 
 
       </Routes>

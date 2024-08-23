@@ -1,14 +1,24 @@
 import React from 'react';
-import './Footer.css';
+import { useNavigate } from 'react-router-dom';
+import './Footer.css'; // Import the CSS file for styling
 
-function Footer() {
+const Footer = () => {
+  const navigate = useNavigate();
+
+  const goToLandingPage = () => {
+    navigate('/country');
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>© 2024 - Mukuru. All rights reserved. Mukuru Financial Services (Pty) Ltd is an authorized Financial Services Provider FSP45517 and a registered Credit Provider NCRCP9244.</p>
+        <p>&copy; 2024 Your Company Name</p>
+        <button className="navigate-button" onClick={goToLandingPage}>
+          find you mukuru
+        </button>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
