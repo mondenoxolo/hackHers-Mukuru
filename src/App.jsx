@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import GenericCountryPage from './components/GenericCountryPage';
 import LandingPage from './components/LandingPage';
 import Zambia from './components/Zambia';
 // import LandingPage from './components/LandingPage';

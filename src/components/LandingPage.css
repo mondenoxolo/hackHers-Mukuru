@@ -84,7 +84,7 @@ nav ul li a:hover, nav ul li a.active {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,7 +303,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .mukuru-group {
   background-color: #ff6600;
-  color: white;
+  color: rgb(41, 40, 40);
   padding: 4rem 2rem;
   text-align: center;
 }
