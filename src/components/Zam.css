@@ -1,0 +1,154 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Background Container */
+  .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('/home/wtc/hackHers-Mukuru/src/pictures/Zambia/flag.jpeg');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    z-index: -1; /* Avoid repeating the image */
+  }
+  
+  /* Black Overlay */
+  .background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Black overlay with 30% opacity */
+    z-index: 1; /* Ensure overlay is on top */
+  }
+  
+  /* Content Styling */
+  .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  /* Heading Styling */
+  h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center; /* Center align heading */
+    margin: 20px 0; /* Margin above and below heading */
+  }
+  
+  /* Paragraph Styling */
+  p {
+    margin: 10px 0 20px 0; /* Margin above paragraph to separate from heading */
+    text-align: center; /* Center align text */
+    padding-bottom: 40px;
+  }
+  
+  /* Image List Container */
+  .image-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Maximum width of the image container */
+  }
+  
+  /* Image List */
+  .image-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+    justify-content: center; /* Center images */
+  }
+  
+  /* Image Box */
+  .image-list li {
+    width: 150px; /* Fixed width of the image box */
+    height: 150px; /* Fixed height of the image box */
+    box-sizing: border-box;
+    overflow: hidden; /* Hide overflow if the image is larger than the box */
+  }
+  
+  /* Image Styling */
+  .image-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire box, cropping as needed */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Image Hover Effect */
+  .image-list img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Custom Styles for Specific Images */
+  .image-custom-size {
+    width: 200px; /* Adjust width for specific images */
+    height: 200px; /* Adjust height for specific images */
+  }
+  
+  /* Specific Image Styling */
+  .image-custom-size img {
+    object-fit: contain; /* Fit image within the new box size */
+  }
+  
+  /* Custom Position for CBZ Image */
+  .image-custom-position img {
+    transform: translateX(10px); /* Move image 10 pixels to the right */
+  }
+  
+  /* Custom Adjustment for Specific Images */
+  .image-custom-adjust img {
+    object-fit: contain; /* Ensure the image maintains its aspect ratio and fits within the container */
+  }
+  
+  /* Container for Icon and Header */
+  .icon-header-container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    gap: 20px; /* Space between icon and header */
+    margin-bottom: 20px; /* Space between the container and paragraph */
+  }
+  
+  /* Circular Container for Icon */
+  .icon-container {
+    width: 100px; /* Size of the circle */
+    height: 100px; /* Size of the circle */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Hide overflow to maintain circular shape */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the image inside the circle */
+    background-color: white; /* Background color for visibility */
+  }
+  
+  /* Icon Styling */
+  .icon-container img {
+    width: 100%; /* Fit the image inside the container */
+    height: 100%; /* Fit the image inside the container */
+    object-fit: cover; /* Cover the circle */
+  }
+  
