@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import CountryDropDown from './CountryDropDown';
 import './LandingPage.css';
 
 function LandingPage() {
@@ -71,7 +72,7 @@ function LandingPage() {
 
             <section id="home" className="hero">
                 <div className="hero-content">
-                    <h1>Welcome to Mukuru * HackHers</h1>
+                    <h1>Welcome to Mukuru</h1>
                     <p>Empowering Africa's Financial Future</p>
                 </div>
             </section>
@@ -83,6 +84,9 @@ function LandingPage() {
                         <p>{section.content}</p>
                     </section>
                 ))}
+            </div>
+            <div className='dropdown'>
+                 <CountryDropDown/>
             </div>
 
             <section id="group" className="mukuru-group">
