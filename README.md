@@ -1,3 +1,25 @@
+# hackHers-Mukuru
+
+
+
+## Description
+The purpose of the project is to Build a User-Friendly Pay-in and Pay-out Location Finder.Using  user interface (UI) for an API that helps customers find a payout location when collecting remittances.We are going to 
+Create an intuitive and user-friendly application allowing customers to search for a location and refine search results based on specified parameters while providing a seamless user experience.
+
+## Table of Contents
+1. [Installation]
+2. [Usage]
+3. [Contributing]
+4. [License]
+5. [Contact]
+
+## Installation
+1. Clone the repository: https://github.com/mondenoxolo/hackHers-Mukuru.git
+3. Navigate to the project directory: `cd repository`
+4. Install dependencies: `npm install` (or `pip install -r requirements.txt` for Python)
+
+## Usage 
+
 1. nope -v
 2. sudo apt install node.js
 3. npm -v
